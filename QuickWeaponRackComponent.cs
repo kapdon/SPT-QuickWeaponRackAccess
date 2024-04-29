@@ -13,6 +13,8 @@ using QuickWeaponRackAccess.Utils;
 using UnityEngine;
 using UnityEngine.UI;
 
+using GClass2818 = GAbstractItemContext1;
+
 namespace QuickWeaponRackAccess
 {
     public class QuickWeaponRackComponent : UIInputNode

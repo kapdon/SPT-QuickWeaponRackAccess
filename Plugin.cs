@@ -1,4 +1,4 @@
-﻿using Aki.Reflection.Utils;
+﻿using StayInTarkov;
 using BepInEx;
 using BepInEx.Logging;
 using DrakiaXYZ.VersionChecker;
@@ -15,10 +15,10 @@ namespace QuickWeaponRackAccess
     [BepInPlugin("com.mpstark.QuickWeaponRackAccess", "QuickWeaponRackAccess", BuildInfo.Version)]
     public class Plugin : BaseUnityPlugin
     {
-        public const int TarkovVersion = 29197;
+        public const int TarkovVersion = 29351;
         public static Plugin Instance;
         public static ManualLogSource Log => Instance.Logger;
-        public static Inventory PlayerInventory => ClientAppUtils.GetMainApp().GetClientBackEndSession().Profile.Inventory;
+        public static Inventory PlayerInventory => StayInTarkovHelperConstants.GetMainApp().GetClientBackEndSession().Profile.Inventory;
         public static string PluginFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
         public QuickWeaponRackComponent QuickWeaponRackComponent => _quickWeaponRackComponent;

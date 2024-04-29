@@ -1,8 +1,10 @@
-using Aki.Reflection.Patching;
+using StayInTarkov;
 using EFT.InventoryLogic;
 using HarmonyLib;
 using System.Collections.Generic;
 using System.Reflection;
+
+using InteractionsHandlerClass = ItemMovementHandler;
 
 namespace QuickWeaponRackAccess.Patches
 {
