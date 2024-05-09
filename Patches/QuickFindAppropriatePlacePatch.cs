@@ -1,8 +1,9 @@
 using StayInTarkov;
-using EFT.InventoryLogic;
-using HarmonyLib;
 using System.Collections.Generic;
 using System.Reflection;
+
+using EFT.InventoryLogic;
+using HarmonyLib;
 
 using InteractionsHandlerClass = ItemMovementHandler;
 
